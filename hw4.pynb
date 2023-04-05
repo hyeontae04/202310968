@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMuAC0n3Xt+Hp9DsfryF+Gn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hyeontae04/202310968/blob/main/hw4.pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "YVw-AqhF6FrW"
+      },
+      "outputs": [],
+      "source": [
+        "def rep_char(c, n):\n",
+        "  print (c * n)\n",
+        "\n",
+        "def draw_line_string(msg):\n",
+        "  msg1, msg2 = 'Hello', 'Welcome to Seoul.'\n",
+        "  nstr = len(msg1) if (len(msg1) > len(msg2)) else len(msg2)\n",
+        "  rep_char('-', nstr * 2 + 13)\n",
+        "  print(f'{msg1} {msg}, \\n{msg2}')\n",
+        "  rep_char('-', nstr * 2 + 13)\n",
+        "\n",
+        "draw_line_string(input('Input his/her name: '))"
+      ]
+    }
+  ]
+}
